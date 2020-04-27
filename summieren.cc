@@ -4,16 +4,14 @@
 int main(){
   std::ifstream fin("daten.txt");
   std::ofstream fout("datensumme.txt");
-  int i=1;
-  while(i<=234){
-    i++;
+  for(int i = 1;i<=234;i++){
     int a;
     int b;
-    int c;
     fin >> a;
     fin >> b;
-    c = a + b;
+    int c = a + b;
     fout << c << std::endl;
   }
   fout.close();
+  fin.close();
 }
